@@ -31,7 +31,7 @@ def generate_password():
     pyperclip.copy(password)
 
 
-# ---------------------------- WRITE TO JASON ------------------------------- #
+# ---------------------------- SEARCH JSON ------------------------------- #
 def search():
     data_to_search = website_entry.get()
     if len(data_to_search) != 0:
@@ -95,7 +95,7 @@ def pwned_main():
             messagebox.showinfo(title="Has your password been pwned?", message=message)
 
 
-# ---------------------------- WRITE TO JASON ------------------------------- #
+# ---------------------------- WRITE TO JSON ------------------------------- #
 def write_to_json(file, data):
     with open(file=file, mode="w") as data_file:
         json.dump(data, data_file, indent=4)
